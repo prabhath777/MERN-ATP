@@ -21,22 +21,22 @@
 
 
 
-// console.log("Exam submitted successfully");
+console.log("Exam submitted successfully");
 
 
 
 
-// setTimeout(() => {
-//     console.log("Evaluating answers…");
-// }, 2000);
+setTimeout(() => {
+    console.log("Evaluating answers…");
+}, 2000);
 
 
-// setTimeout(() => {
-//     console.log("Result: Pass");
-// }, 4000);
+setTimeout(() => {
+    console.log("Result: Pass");
+}, 4000);
 
 
-// console.log("-----------------------------------------------------------------------------------");
+console.log("-----------------------------------------------------------------------------------");
 
 console.log("OTP Sent Successfully");
 
