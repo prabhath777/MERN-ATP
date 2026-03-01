@@ -1,0 +1,106 @@
+
+
+//select all users 
+
+GET http://localhost:6969/users
+
+//don't have any body
+
+
+//read user by specific 
+
+### 
+GET http://localhost:6969/users/1
+
+
+
+
+###new user
+POST http://localhost:6969/users
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"prabs",
+    "age":19
+}
+
+###update user
+PUT http://localhost:6969/users/
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"prabhath",
+    "age":18
+}
+###
+
+DELETE http://localhost:6969/users/1
+
+//dont't have any body
+
+
+
+//delete and get request don't support body
+//so that these two requets can send data through endpoint
+
+
+
+//only post and put request have the body
+//so they should send the data as body of the request
+
+
+
+###
+
+GET http://localhost:6969/products
+
+
+###
+
+GET http://localhost:6969/products/1
+
+###
+POST http://localhost:6969/products
+Content-Type: application/json
+
+ {
+      "productId":1,
+     "productName":"mobile ",
+      "price": "20000 ",
+      "brand": "apple ",
+      "reviews":[]
+    
+    
+}
+
+
+###
+
+PUT   http://localhost:6969/products
+Content-Type: application/json
+
+ {
+      "productId":1,
+     "productName":"mobile ",
+      "price": "30000 ",
+      "brand": "apple ",
+      "reviews":[]
+    
+    
+}
+
+
+###
+
+PUT   http://localhost:6969/products/1/reviews
+Content-Type: application/json
+
+{
+  "review": "gh"
+}
+
+###
+
+DELETE http://localhost:6969/products/1
