@@ -1,0 +1,106 @@
+
+
+//select all users 
+
+GET http://localhost:4444/user-api/users
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAcHJhYnMuY29tIiwiaWF0IjoxNzcyOTAzNTM1LCJleHAiOjE3NzI5MDcxMzV9.8GnCeAZ__2IIUb1iB23sJPP-vlO9AphKHzd5sbKBybo; Path=/; HttpOnly; SameSite=Lax
+//don't have any body
+
+
+//read user by specific 
+
+### 
+GET http://localhost:4444/user-api/users/id/69abc2771b73e9afc0e5be90
+
+
+###
+GET http://localhost:4444/user-api/users/user1
+
+###new user
+POST http://localhost:4444/user-api/users
+Content-Type: application/json
+
+
+  {
+    "username":"prabsss",
+    "password":"123456789",
+    "email":"test@prabs.com",
+    "age":20
+  }
+
+###user login
+
+POST http://localhost:4444/user-api/auth
+Content-Type: application/json
+
+{
+  "email":"test@prabs.com",
+  "password":"123456789"
+}
+
+
+
+
+
+###update user
+PUT http://localhost:4444/user-api/users/69aa8c7b2f539f491ec580bc
+Content-Type: application/json
+
+{
+    "username":"hasrithh",
+    "password":"nunnu4",
+    "email": "diddy@epen.com",
+    "age": 12
+}
+###
+
+DELETE http://localhost:4444/user-api/users/69aa68d4b823147dfcfd304d
+
+//dont't have any body
+
+
+
+//delete and get request don't support body
+//so that these two requets can send data through endpoint
+
+
+
+//only post and put request have the body
+//so they should send the data as body of the request
+
+
+
+###
+GET http://localhost:4444/product-api/product
+###
+GET http://localhost:4444/product-api/product/69ab07169ce3fe1d3b5911dc
+###
+POST http://localhost:4444/product-api/product
+Content-Type: application/json
+
+{
+      "productID":10112,
+     "productName":"Nothing 4a",
+      "price": 35000,
+      "brand": "Nothing"
+}
+
+
+###
+PUT   http://localhost:4444/product-api/product/69ab07169ce3fe1d3b5911dc
+Content-Type: application/json
+
+ {
+      "productID":10112,
+     "productName":"Nothing 4a",
+      "price": 30000,
+      "brand": "Nothing"
+}
+
+
+
+###
+DELETE http://localhost:4444/product-api/product/69ab07169ce3fe1d3b5911dc
+
+
+
