@@ -1,0 +1,33 @@
+POST http://localhost:1005/emp
+Content-Type: application/json
+
+{
+    "name":"kai cenat",
+    "email":"heelo@gmail.com",
+    "mobile":"56789",
+    "companyname":"dalle"
+
+}
+
+###
+
+GET http://localhost:1005/emps
+
+
+###
+
+PUT http://localhost:6666/edit/69ca1a58179995063b2a0fc8
+Content-Type: application/json
+
+{
+    "name":"ishowspeed",
+    "email":"heelo@gmail.com",
+    "mobile":"56789",
+    "companyname":"dalle"
+
+}
+
+
+###
+
+DELETE  http://localhost:6666/remove/69ca1a58179995063b2a0fc8
